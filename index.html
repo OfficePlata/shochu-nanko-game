@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焼酎なんこゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>焼酎なんこゲーム</h1>
+        <p id="user-display-name">プレイヤー名</p>
+
+        <div id="game-area">
+            <div class="player-area" id="cpu-area">
+                <h2>相手の手</h2>
+                <div class="hand-display" id="cpu-hand">？</div>
+            </div>
+
+            <div class="player-area" id="player-area">
+                <h2>自分の手</h2>
+                <div class="hand-display" id="player-hand">？</div>
+            </div>
+        </div>
+
+        <div id="result-display">結果をここに表示</div>
+
+        <div id="controls">
+            <h3>自分の棒の数 (0〜3)</h3>
+            <div id="stick-selector" class="button-group">
+                <button class="stick-btn" data-sticks="0">0</button>
+                <button class="stick-btn" data-sticks="1">1</button>
+                <button class="stick-btn" data-sticks="2">2</button>
+                <button class="stick-btn" data-sticks="3">3</button>
+            </div>
+            
+            <h3>合計本数の予想 (0〜6)</h3>
+            <div id="guess-selector" class="button-group">
+                <button class="guess-btn" data-guess="0">0</button>
+                <button class="guess-btn" data-guess="1">1</button>
+                <button class="guess-btn" data-guess="2">2</button>
+                <button class="guess-btn" data-guess="3">3</button>
+                <button class="guess-btn" data-guess="4">4</button>
+                <button class="guess-btn" data-guess="5">5</button>
+                <button class="guess-btn" data-guess="6">6</button>
+            </div>
+        </div>
+
+        <button id="reset-button" style="display: none;">もう一度遊ぶ</button>
+    </div>
+
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
