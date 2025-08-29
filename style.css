@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+#game-area {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.player-area {
+    width: 45%;
+}
+
+.hand-display {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+#result-display {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-height: 30px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button.selected {
+    background-color: #e67e22;
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+#reset-button {
+    background-color: #2ecc71;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+}
